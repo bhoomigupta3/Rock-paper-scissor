@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="app">
+        <h1>Stone ✊ Paper ✋ Scissor ✌️</h1>
+
+        <section class="scoreboard">
+            <div class="score">
+                <h2>You</h2>
+                <div id="playerScore" class="score-num">0</div>
+            </div>
+            <div class="vs">vs</div>
+            <div class="score">
+                <h2>Computer</h2>
+                <div id="computerScore" class="score-num">0</div>
+            </div>
+        </section>
+
+        <section class="choices">
+            <button class="choice" data-choice="stone" aria-label="Stone">
+        <span class="emoji">✊</span>
+        <span class="label">Stone</span>
+      </button>
+
+            <button class="choice" data-choice="paper" aria-label="Paper">
+        <span class="emoji">✋</span>
+        <span class="label">Paper</span>
+      </button>
+
+            <button class="choice" data-choice="scissor" aria-label="Scissor">
+        <span class="emoji">✌️</span>
+        <span class="label">Scissor</span>
+      </button>
+        </section>
+
+        <section class="result">
+            <div class="round-info">
+                <div>You chose: <strong id="playerChoice">—</strong></div>
+                <div>Computer chose: <strong id="computerChoice">—</strong></div>
+            </div>
+
+            <div id="outcome" class="outcome">Make your move!</div>
+
+            <div class="controls">
+                <button id="nextRound" class="btn">Next Round</button>
+                <button id="reset" class="btn secondary">Reset Game</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            Tip: Use keys 1 (Stone), 2 (Paper), 3 (Scissor).
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
